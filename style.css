@@ -1,0 +1,39 @@
+header {
+    position: relative;
+    overflow: hidden;
+}
+
+#slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fce4ec;
+    color: #ff7dbe;
+    font-family: Arial, sans-serif;
+}
+
+
+header {
+    background-color: #ff7dbe;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+section {
+    margin: 20px;
+}
+
+footer {
+    background-color: #ff7dbe;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}

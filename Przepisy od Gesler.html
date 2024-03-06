@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platforma z przepisami :3</title>
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+    
+</head>
+<body>
+    <header>
+        <h1>Platforma z przepisami :3</h1>
+           <div id="slider">
+                <div class="slide"><img src="C:\Users\4798619\Downloads\74951d482d060be41b5a15fd3867c8b9.jpg" width="250" height="150" "Zdjęcie 1"></div>
+            </div>
+    </header>
+    <section>
+        <h2>Przeglądaj przepisy</h2>
+        <img src="https://i.pinimg.com/originals/c2/4f/d0/c24fd037705f74f56f5768db4914334b.gif">
+        <button>Naciśnij♡</button>
+    </section>
+    <section>
+        <h2>Wyszukaj przepisy</h2>
+        
+        <form action="#" method="GET">
+            <label for="search">Szukaj: </label>
+            <input type="text" id="search" name="search">
+            <button type="submit">Szukaj♡</button>
+        </form>
+    </section>
+    <section>
+        <h2>Sortuj przepisy</h2>
+        <img src="https://i.pinimg.com/originals/50/91/ec/5091ec6ae637f38943047898531fc5d3.gif">
+        <label for="sort">Sortuj według: </label>
+        <select id="sort" name="sort">
+            <option value="rating">Popularność</option>
+            <option value="date">Data dodania</option>ś
+        </select>
+        <button type="button">Sortuj♡</button>
+    </section>
+    <section>
+        <h2>Dodaj nowy przepis</h2>
+        <button>Dodaj♡</button>
+    </section>
+    <footer>
+        <p>&copy; Hanna Kulynych</p>
+    </footer>
+    <script>
+        const slider = document.getElementById('slider');
+        let count = 0;
+
+        function nextSlide() {
+            count++;
+            if (count >= slider.children.length) {
+                count = 0;
+            }
+            updateSlider();
+        }
+
+        function updateSlider() {
+            slider.style.transform = `translateX(${-count * 100}%)`;
+        }
+
+        setInterval(nextSlide, 3000); // Automatyczne przewijanie co 3 sekundy
+    </script>
+</body>
+
+</html>
